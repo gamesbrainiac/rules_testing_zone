@@ -1,7 +1,7 @@
-def foo(param):
-    ls = [1, 2, 3]
-    x, y = ls
-    return x, y
+def foo():
+    my_dict = {'k1': 42}
+    value = my_dict['k2']
+    return value
 
 
 def print_hi(name):
