@@ -1,6 +1,6 @@
-def foo(something):
+def foo():
     ls = [1, 2, 3]
-    foo(ls[3])
+    return ls[3]
 
 
 def print_hi(name):
