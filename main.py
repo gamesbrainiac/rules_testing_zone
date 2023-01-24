@@ -1,8 +1,7 @@
 def foo(param):
     ls = [1, 2, 3]
     x, y = ls
-    return x, y
-
+    return (x, y)
 
 
 def print_hi(name):
