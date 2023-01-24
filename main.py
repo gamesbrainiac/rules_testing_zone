@@ -1,7 +1,6 @@
-def foo():
-    my_dict = {'k1': 42}
-    value = my_dict['k2']
-    return value
+def foo(something):
+    ls = [1, 2, 3]
+    foo(ls[3])
 
 
 def print_hi(name):
