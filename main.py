@@ -1,15 +1,25 @@
-def foo(param):
-    ls = [1, 2, 3]
-    x, y = ls
-    return (x, y)
+def doSomething():  # NOSONAR
+    pass
+
+
+def doSomethingElse():  # NOSONAR
+    pass
 
 
 def print_hi(name):
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+    a = False
+    if a:  # Noncompliant
+        doSomething()  # never executed
+
+    n = None
+
+    if not n:  # Noncompliant; n is None, which is always equivalent to "False" in a condition, "doSomethingElse()" is never evaluated
+        doSomething()
+    else:
+        doSomethingElse()  # never executed
+
+    print(f"Helllo {name}")
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
