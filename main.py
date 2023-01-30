@@ -1,25 +1,9 @@
-def doSomething():  # NOSONAR
-    pass
+import re
 
 
-def doSomethingElse():  # NOSONAR
-    pass
-
-
-def print_hi(name):
-    a = False
-    if a:  # Noncompliant
-        doSomething()  # never executed
-
-    n = None
-
-    if not n:  # Noncompliant; n is None, which is always equivalent to "False" in a condition, "doSomethingElse()" is never evaluated
-        doSomething()
-    else:
-        doSomethingElse()  # never executed
-
-    print(f"Helllo {name}")
+def do_something():
+    print("Hello Peter!")
 
 
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    do_something()
