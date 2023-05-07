@@ -1,2 +1,4 @@
 .venv/
 *.pyc
+.ruff_cache
+.pytest_cache
