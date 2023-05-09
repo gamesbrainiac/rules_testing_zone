@@ -1,7 +1,7 @@
 def times_table():
     table = []
     for i in range(10):
-        def multiplier(x):
+        def multiplier(x, i=i):
             return i * x
 
         table.append(multiplier)

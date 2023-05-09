@@ -2,7 +2,8 @@ import re
 
 
 def main():
-    re.search(r"[ab]|a")
+    # ab or a
+    re.search(r"ab?")
 
 
 if __name__ == '__main__':

@@ -4,13 +4,14 @@ from util import c
 def bad_idea():
     a = 10
     b = 10
-    print(a is b)
+    print(a == b)
 
 
 def bad_idea_2():
+    c = 999
     d = 999
 
-    print(c is d)
+    print(c == d)
 
 
 if __name__ == '__main__':

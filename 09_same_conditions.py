@@ -1,7 +1,9 @@
+def always_none():
+    return None
+
+
 def main(param='a'):
-    if param == 'a':
-        print("Something")
-    else:
+    if always_none():
         print("Something")
 
 

@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    match = re.search(r"Jack|Peter|", "John")
+    match = re.search(r"Jack|Peter", "John")
     return match
 
 
