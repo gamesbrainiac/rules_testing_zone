@@ -1,17 +1,13 @@
-from util import c
-
-
 def bad_idea():
     a = 10
     b = 10
-    print(a == b)
+    print(a is b)
 
 
 def bad_idea_2():
     c = 999
     d = 999
-
-    print(c == d)
+    print(c is d)
 
 
 if __name__ == '__main__':

@@ -1,5 +1,5 @@
 def always_none():
-    return None
+    pass
 
 
 def main(param='a'):

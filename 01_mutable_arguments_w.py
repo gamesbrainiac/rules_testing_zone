@@ -1,6 +1,4 @@
-def add_item(item, items=None):
-    if items is None:
-        items = []
+def add_item(item, items=[]):
     items.append(item)
     return items
 

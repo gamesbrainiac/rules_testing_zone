@@ -8,7 +8,7 @@ def depth_first_search(graph, node, visited=None):
 
     # Recur for all the vertices adjacent to this vertex
     for neighbor in graph[node]:
-        # if neighbor not in visited:
+        if neighbor not in visited:
             depth_first_search(graph, neighbor, visited)
 
     return visited
