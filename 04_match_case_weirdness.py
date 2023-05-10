@@ -1,5 +1,7 @@
 def match_test(seq):
 
+    x, y = 10, 10
+
     match seq:
         case []:
             print("Empty list")
@@ -9,6 +11,8 @@ def match_test(seq):
             print("List with two items")
         case _:
             print("Other")
+
+    print(x, y)
 
 
 if __name__ == '__main__':
