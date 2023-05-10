@@ -10,4 +10,4 @@ def times_table():
 
 
 if __name__ == '__main__':
-    print([f(3) for f in times_table()])
+    print([f(5) for f in times_table()])

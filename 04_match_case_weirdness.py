@@ -16,4 +16,4 @@ def match_test(seq):
 
 
 if __name__ == '__main__':
-    match_test((1, 2))
+    match_test((3, 4))
