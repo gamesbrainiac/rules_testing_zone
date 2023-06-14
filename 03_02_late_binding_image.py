@@ -5,6 +5,8 @@ import numpy as np
 from PIL import Image
 from scipy.ndimage import gaussian_filter
 
+from util import sigmas
+
 
 def create_pipeline(*operations):
     def pipeline(data):
@@ -30,7 +32,6 @@ def main(image_path):
     image_np = np.array(image)
 
     # Create blur operations with different sigma values
-    sigmas = list(range(1, 6))
     blur_operations = [(lambda image: gaussian_filter(image, sigma)) for sigma in sigmas]
 
     # Create our pipeline with these operations
