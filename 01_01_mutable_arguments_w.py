@@ -1,4 +1,9 @@
 def add_item(item, items=[]):
+    """
+    A function that adds an item to an existing list.
+    If a list is not provided, it creates a new item
+    with that list added.
+    """
     items.append(item)
     return items
 
